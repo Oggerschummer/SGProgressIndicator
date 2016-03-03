@@ -10,11 +10,12 @@
 		07E1E57C01FA2852092DECA3ACFC7C88 /* Pods-SGProgressIndicator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA2FF4C71FCAA445D8E93DEA5204F9ED /* Pods-SGProgressIndicator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12468710ACC5AD975AF5DA028AA28961 /* SGProgressIndicator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6BB20DA7753CD28537F0C794A3913F1 /* SGProgressIndicator.bundle */; };
 		211FE1A340D226F4A70CB2B83AE57EBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		3B4A2C53D215F3EEBC9AB3D3C4C641E0 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BF86D82F4452C2F763A4A1DCDF38D4 /* ReplaceMe.m */; };
 		561AE6295EA19527432BDBD3095838A8 /* SGProgressIndicator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E47133C870ED5483CF401C215DB96B20 /* SGProgressIndicator-dummy.m */; };
 		7B3886B56C8363C2A39A8D50899C8467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		8B341F13339DEEC525EEF260978F50F6 /* SGProgressIndicator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5905FB3489F8B844A5167F695C728B5 /* SGProgressIndicator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BFFA85F0B1E5B63C6BA6F88FCE1A583 /* Pods-SGProgressIndicator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49AF60AF2B44DBCA7436B654138AA1E6 /* Pods-SGProgressIndicator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D0219711C884FF2005E58F2 /* SGProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D02196F1C884FF2005E58F2 /* SGProgressIndicator.h */; };
+		9D0219721C884FF2005E58F2 /* SGProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0219701C884FF2005E58F2 /* SGProgressIndicator.m */; };
 		AE5E37855EE8CF0D859CAF70CB9DB303 /* Pods-SGProgressIndicator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7070B01A42A39FCAD288D87563C87F6 /* Pods-SGProgressIndicator_Example-dummy.m */; };
 		EABA120C215E61D433159CD4BFBA15DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		F4E54116D8D3B2FBA05827A35226F0DA /* Pods-SGProgressIndicator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 466ADDECCA971AF622072A06D5059AB0 /* Pods-SGProgressIndicator_Tests-dummy.m */; };
@@ -62,7 +63,8 @@
 		8761166FE0DBE4512FA38B3C45A1B7FC /* Pods-SGProgressIndicator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGProgressIndicator_Tests-resources.sh"; sourceTree = "<group>"; };
 		8B67E91544C740218689CA971C1AE7A7 /* Pods-SGProgressIndicator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGProgressIndicator_Example-frameworks.sh"; sourceTree = "<group>"; };
 		98C45BE434354149487FE19B0BABC288 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3BF86D82F4452C2F763A4A1DCDF38D4 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		9D02196F1C884FF2005E58F2 /* SGProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGProgressIndicator.h; sourceTree = "<group>"; };
+		9D0219701C884FF2005E58F2 /* SGProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGProgressIndicator.m; sourceTree = "<group>"; };
 		A5CE1A09C3EEE0C7D8A3B3695CF8EC7A /* Pods-SGProgressIndicator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGProgressIndicator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A6C0253F00BAA9368B020B72E6762418 /* Pods-SGProgressIndicator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGProgressIndicator_Example-resources.sh"; sourceTree = "<group>"; };
 		B6BB20DA7753CD28537F0C794A3913F1 /* SGProgressIndicator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGProgressIndicator.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,7 +181,8 @@
 		A24ED3F041A3FB79A3A7DCBE79625634 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A3BF86D82F4452C2F763A4A1DCDF38D4 /* ReplaceMe.m */,
+				9D02196F1C884FF2005E58F2 /* SGProgressIndicator.h */,
+				9D0219701C884FF2005E58F2 /* SGProgressIndicator.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BFFA85F0B1E5B63C6BA6F88FCE1A583 /* Pods-SGProgressIndicator_Example-umbrella.h in Headers */,
+				9D0219711C884FF2005E58F2 /* SGProgressIndicator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0219721C884FF2005E58F2 /* SGProgressIndicator.m in Sources */,
 				AE5E37855EE8CF0D859CAF70CB9DB303 /* Pods-SGProgressIndicator_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B4A2C53D215F3EEBC9AB3D3C4C641E0 /* ReplaceMe.m in Sources */,
 				561AE6295EA19527432BDBD3095838A8 /* SGProgressIndicator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
