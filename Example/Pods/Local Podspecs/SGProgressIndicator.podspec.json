@@ -1,15 +1,14 @@
 {
   "name": "SGProgressIndicator",
   "version": "0.1.0",
-  "summary": "A short description of SGProgressIndicator.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SGProgressIndicator",
+  "summary": "SGProgressIndicator is a new style of infinity progress indicator",
+  "homepage": "https://github.com/salvatoregraf/SGProgressIndicator",
   "license": "MIT",
   "authors": {
     "SALVATORE": "s.graf@italwork.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SGProgressIndicator.git",
+    "git": "https://github.com/salvatoregraf/SGProgressIndicator.git",
     "tag": "0.1.0"
   },
   "platforms": {

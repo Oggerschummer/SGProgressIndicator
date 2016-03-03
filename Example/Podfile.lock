@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SGProgressIndicator: ef140ad23c6408917ef0ab6a4bc68688767725a8
+  SGProgressIndicator: 811f06c547424382e0cda0f9d2de897df028bbc6
 
 COCOAPODS: 0.39.0
