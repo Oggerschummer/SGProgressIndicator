@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SGProgressIndicator"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "SGProgressIndicator is a new style of infinity progress indicator"
 
 # This description is used to generate tags and improve search results.
