@@ -23,6 +23,7 @@
 		99C2F173623F868472FDCE20 /* Pods_SGProgressIndicator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBBF75EB1FE30EC39CA6473 /* Pods_SGProgressIndicator_Example.framework */; };
 		9D02196D1C884FD5005E58F2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D02196A1C884FD5005E58F2 /* TableViewController.m */; };
 		9D02196E1C884FD5005E58F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D02196C1C884FD5005E58F2 /* ViewController.m */; };
+		9DAC3B971C8877B400BE8855 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC3B961C8877B400BE8855 /* Launch Screen.storyboard */; };
 		B6A3920ED6645F7092E1E8CC /* Pods_SGProgressIndicator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7CB194D329B2666084ABD9 /* Pods_SGProgressIndicator_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		9D02196A1C884FD5005E58F2 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		9D02196B1C884FD5005E58F2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9D02196C1C884FD5005E58F2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9DAC3B961C8877B400BE8855 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9DCACB80EB04FC392B7456D9 /* Pods-SGProgressIndicator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Tests/Pods-SGProgressIndicator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AB2334BFEA7A8FC49B1BD7FA /* Pods-SGProgressIndicator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Example/Pods-SGProgressIndicator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C76DEDE8BC9CE030D34DD73C /* SGProgressIndicator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGProgressIndicator.podspec; path = ../SGProgressIndicator.podspec; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				9DAC3B961C8877B400BE8855 /* Launch Screen.storyboard */,
 			);
 			name = "Example for SGProgressIndicator";
 			path = SGProgressIndicator;
@@ -283,6 +286,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				9DAC3B971C8877B400BE8855 /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
