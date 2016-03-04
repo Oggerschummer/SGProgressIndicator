@@ -9,6 +9,14 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+* Xcode 6 or higher
+* Apple LLVM compiler
+* iOS 8.0 or higher (May work on previous versions, just did not testit. Feel free to edit it).
+* ARC
+
+## Demo
+
+Open and run the DGActivityIndicatorExample project in Xcode to see DGActivityIndicatorView in action.
 
 ## Installation
 
@@ -19,6 +27,9 @@ it, simply add the following line to your Podfile:
 use_frameworks! 
 pod "SGProgressIndicator"
 ```
+### Manual install
+
+All you need to do is drop SGProgressIndicator folder into your project and include headers.
 
 ## Author
 
