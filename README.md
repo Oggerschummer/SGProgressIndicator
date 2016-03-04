@@ -16,7 +16,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Demo
 
-Open and run the DGActivityIndicatorExample project in Xcode to see DGActivityIndicatorView in action.
+Open and run the SGProgressIndicator project in Xcode to see SGProgressIndicator in action.
 
 ## Installation
 
