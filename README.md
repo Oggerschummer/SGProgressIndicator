@@ -16,6 +16,7 @@ SGProgressIndicator is available through [CocoaPods](http://cocoapods.org). To i
 it, simply add the following line to your Podfile:
 
 ```ruby
+use_frameworks! 
 pod "SGProgressIndicator"
 ```
 
