@@ -29,7 +29,7 @@ IB_DESIGNABLE
 /**
  *  Tickness cerchio (default 2.)
  */
-@property (nonatomic) IBInspectable CGFloat tickness;
+@property (nonatomic) IBInspectable CGFloat thickness;
 
 /**
  *  Colore cerchio (20% transparent gray)

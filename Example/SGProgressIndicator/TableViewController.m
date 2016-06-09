@@ -32,7 +32,7 @@
 
 - (IBAction)ticknessValue:(UIStepper *)sender {
     
-    _indicator.tickness  = sender.value;
+    _indicator.thickness  = sender.value;
     _valoreTickness.text = [NSString stringWithFormat:@"%.0f",sender.value];
 }
 

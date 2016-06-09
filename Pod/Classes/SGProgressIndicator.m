@@ -52,21 +52,21 @@ static NSString *const kRotationAnimationKey = @"rotation";
     [self _unregisterFromAppStateNotifications];
 }
 
-- (void)setTickness:(CGFloat)tickness {
-    if(_tickness != tickness) {
-        _tickness = tickness;
+- (void)setThickness:(CGFloat)thickness {
+    if(_thickness != thickness) {
+        _thickness = thickness;
         
-        self.firstArc.lineWidth     = tickness;
-        self.firstCircle.lineWidth  = tickness;
+        self.firstArc.lineWidth     = thickness;
+        self.firstCircle.lineWidth  = thickness;
 
-        self.secondArc.lineWidth    = tickness;
-        self.secondCircle.lineWidth = tickness;
+        self.secondArc.lineWidth    = thickness;
+        self.secondCircle.lineWidth = thickness;
 
-        self.fourthArc.lineWidth    = tickness;
-        self.fourthCircle.lineWidth = tickness;
+        self.fourthArc.lineWidth    = thickness;
+        self.fourthCircle.lineWidth = thickness;
 
-        self.thirdArc.lineWidth     = tickness;
-        self.thirdCircle.lineWidth  = tickness;
+        self.thirdArc.lineWidth     = thickness;
+        self.thirdCircle.lineWidth  = thickness;
         
     }
 }
@@ -255,7 +255,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
 - (void)_setupBezierPathsForCircle:(NSInteger) circleNumber {
     
     CGPoint center                   = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height * 0.5);
-    CGFloat radius                   = self.bounds.size.width * 0.5 - self.tickness;
+    CGFloat radius                   = self.bounds.size.width * 0.5 - self.thickness;
 
     UIBezierPath *firstCirclePath;
     UIBezierPath *firstArcPath;
@@ -273,7 +273,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
         case 1:
             // CERCHIO TOP
             firstCirclePath     = [UIBezierPath bezierPathWithArcCenter:center
-                                                                               radius:radius - self.tickness *0
+                                                                               radius:radius - self.thickness *0
                                                                            startAngle:0
                                                                              endAngle:degreesToRadians(360)//   M_PI * 2
                                                                             clockwise:YES];
@@ -301,13 +301,13 @@ static NSString *const kRotationAnimationKey = @"rotation";
          case 2:
             //CERCHIO MIDDLE
             secondCirclePath  = [UIBezierPath bezierPathWithArcCenter:center
-                                                                             radius:radius - self.tickness *1
+                                                                             radius:radius - self.thickness *1
                                                                          startAngle:0
                                                                            endAngle:degreesToRadians(360)   //M_PI * 2
                                                                           clockwise:NO];
             
             secondArcPath     = [UIBezierPath bezierPathWithArcCenter:center
-                                                                             radius:radius - self.tickness *1
+                                                                             radius:radius - self.thickness *1
                                                                          startAngle:degreesToRadians(45) // -M_PI_4
                                                                            endAngle:degreesToRadians(-45)  // M_PI_2 - M_PI_4
                                                                           clockwise:YES];
@@ -328,13 +328,13 @@ static NSString *const kRotationAnimationKey = @"rotation";
         case 3:
             //CERCHIO MIDDLE CENTER
             thirdCirclePath  = [UIBezierPath bezierPathWithArcCenter:center
-                                                                            radius:radius - self.tickness *2
+                                                                            radius:radius - self.thickness *2
                                                                         startAngle:0
                                                                           endAngle:degreesToRadians(360)   //M_PI * 2
                                                                          clockwise:NO];
             
             thirdArcPath     = [UIBezierPath bezierPathWithArcCenter:center
-                                                                            radius:radius - self.tickness *2
+                                                                            radius:radius - self.thickness *2
                                                                         startAngle:degreesToRadians(135) // -M_PI_4
                                                                           endAngle:degreesToRadians(45)  // M_PI_2 - M_PI_4
                                                                          clockwise:YES];
@@ -354,13 +354,13 @@ static NSString *const kRotationAnimationKey = @"rotation";
         case 4:
             //CERCHIO CENTER
             fourthCirclePath  = [UIBezierPath bezierPathWithArcCenter:center
-                                                                             radius:radius - self.tickness *3
+                                                                             radius:radius - self.thickness *3
                                                                          startAngle:0
                                                                            endAngle:degreesToRadians(360)   //M_PI * 2
                                                                           clockwise:NO];
             
             fourthArcPath     = [UIBezierPath bezierPathWithArcCenter:center
-                                                                             radius:radius - self.tickness *3
+                                                                             radius:radius - self.thickness *3
                                                                          startAngle:degreesToRadians(-135) // -M_PI_4
                                                                            endAngle:degreesToRadians(135)  // M_PI_2 - M_PI_4
                                                                           clockwise:YES];
@@ -392,11 +392,11 @@ static NSString *const kRotationAnimationKey = @"rotation";
     self.hidden = NO;
     self.backgroundColor = [UIColor clearColor];
     
-    if(self.tickness < 1) {
+    if(self.thickness < 1) {
 #if TARGET_OS_TV
-        self.tickness = 6;
+        self.thickness = 6;
 #else
-        self.tickness = 2;
+        self.thickness = 2;
 #endif
     }
     
@@ -406,7 +406,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
     CAShapeLayer *firstCircle  = [CAShapeLayer layer];
     firstCircle.strokeColor    = self.firstCircleColor.CGColor;
     firstCircle.fillColor      = [UIColor clearColor].CGColor;
-    firstCircle.lineWidth      = self.tickness;
+    firstCircle.lineWidth      = self.thickness;
     self.firstCircle           = firstCircle;
     
     if(!self.firstArcColor) {
@@ -415,7 +415,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
     CAShapeLayer *firstArc     = [CAShapeLayer layer];
     firstArc.strokeColor       = self.firstArcColor.CGColor;
     firstArc.fillColor         = [UIColor clearColor].CGColor;
-    firstArc.lineWidth         = self.tickness;
+    firstArc.lineWidth         = self.thickness;
     self.firstArc              = firstArc;
     
     [self _setupBezierPathsForCircle:1];
@@ -433,7 +433,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
     CAShapeLayer *secondCircle = [CAShapeLayer layer];
     secondCircle.strokeColor   = self.secondCircleColor.CGColor;
     secondCircle.fillColor     = [UIColor clearColor].CGColor;
-    secondCircle.lineWidth     = self.tickness;
+    secondCircle.lineWidth     = self.thickness;
     self.secondCircle          = secondCircle;
     
     if(!self.secondArcColor) {
@@ -442,7 +442,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
     CAShapeLayer *secondArc    = [CAShapeLayer layer];
     secondArc.strokeColor      = self.secondArcColor.CGColor;
     secondArc.fillColor        = [UIColor clearColor].CGColor;
-    secondArc.lineWidth        = self.tickness;
+    secondArc.lineWidth        = self.thickness;
     self.secondArc             = secondArc;
     
     [self _setupBezierPathsForCircle:2];
@@ -460,7 +460,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
     CAShapeLayer *thirdCircle = [CAShapeLayer layer];
     thirdCircle.strokeColor   = self.thirdCircleColor.CGColor;
     thirdCircle.fillColor     = [UIColor clearColor].CGColor;
-    thirdCircle.lineWidth     = self.tickness;
+    thirdCircle.lineWidth     = self.thickness;
     self.thirdCircle          = thirdCircle;
     
     if(!self.thirdArcColor) {
@@ -469,7 +469,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
     CAShapeLayer *thirdArc    = [CAShapeLayer layer];
     thirdArc.strokeColor      = self.fourthArcColor.CGColor;
     thirdArc.fillColor        = [UIColor clearColor].CGColor;
-    thirdArc.lineWidth        = self.tickness;
+    thirdArc.lineWidth        = self.thickness;
     self.thirdArc             = thirdArc;
     
     [self _setupBezierPathsForCircle:3];
@@ -486,7 +486,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
     CAShapeLayer *fourthCircle = [CAShapeLayer layer];
     fourthCircle.strokeColor   = self.fourthCircleColor.CGColor;
     fourthCircle.fillColor     = [UIColor clearColor].CGColor;
-    fourthCircle.lineWidth     = self.tickness;
+    fourthCircle.lineWidth     = self.thickness;
     self.fourthCircle          = fourthCircle;
     
     if(!self.fourthArcColor) {
@@ -495,7 +495,7 @@ static NSString *const kRotationAnimationKey = @"rotation";
     CAShapeLayer *fourthArc = [CAShapeLayer layer];
     fourthArc.strokeColor   = self.fourthArcColor.CGColor;
     fourthArc.fillColor     = [UIColor clearColor].CGColor;
-    fourthArc.lineWidth     = self.tickness;
+    fourthArc.lineWidth     = self.thickness;
     self.fourthArc          = fourthArc;
     
     [self _setupBezierPathsForCircle:4];
