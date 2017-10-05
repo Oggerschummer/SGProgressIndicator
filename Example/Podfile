@@ -1,12 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'SGProgressIndicator_Example', :exclusive => true do
+target 'SGProgressIndicator_Example' do
   pod 'SGProgressIndicator', :path => '../'
 end
 
-target 'SGProgressIndicator_Tests', :exclusive => true do
+target 'SGProgressIndicator_Tests' do
   pod 'SGProgressIndicator', :path => '../'
-
-  
 end

@@ -538,16 +538,16 @@ static NSString *const kRotationAnimationKey = @"rotation";
 - (CABasicAnimation *)clockWiseAnimation:(BOOL)isClockWise interval:(CFTimeInterval) interval {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
     if (isClockWise) {
-        animation.fromValue = @(0);
-        animation.toValue   = @(degreesToRadians(360));//@(360); @(M_PI * 2);
+        animation.fromValue   = @(0);
+        animation.toValue     = @(degreesToRadians(360));//@(360); @(M_PI * 2);
     } else {
-        animation.fromValue = @(degreesToRadians(360));//@(M_PI * 2);
-        animation.toValue   = @(0);
+        animation.fromValue   = @(degreesToRadians(360));//@(M_PI * 2);
+        animation.toValue     = @(0);
     }
-    animation.duration       = interval;
-    animation.repeatCount    = INFINITY;
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    
+        animation.duration       = interval;
+        animation.repeatCount    = INFINITY;
+        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+
     return animation;
 }
 
@@ -556,6 +556,92 @@ static NSString *const kRotationAnimationKey = @"rotation";
         [self _addAnimation];
     }
 }
+
+
+
+#define kMDMaxStrokeLength .75f
+#define kMDMinStrokeLength .05f
+#define kMDArcsCount 1.f
+float anArc = 1.f / kMDArcsCount;
+float animationDuration = 0.75f;
+CAMediaTimingFunction *timmingFunction;
+
+
+
+- (CAAnimationGroup *)indeterminateAnimation {
+    static CAAnimationGroup *animationGroups = nil;
+    if (!animationGroups) {
+        NSMutableArray *animations = [NSMutableArray array];
+        float startValue = 0;
+        float startTime = 0;
+        
+        do {
+            [animations
+             addObjectsFromArray:[self createAnimationFromStartValue:startValue
+                                                        andStartTime:startTime
+                                                      withValueScale:anArc]];
+            startValue += anArc * (kMDMaxStrokeLength + kMDMinStrokeLength);
+            startTime += animationDuration * 2;
+        } while (fmodf(floorf(startValue * 1000), 1000) != 0);
+        
+        animationGroups = [CAAnimationGroup animation];
+        animationGroups.duration = startTime;
+        [animationGroups setAnimations:animations];
+        [animationGroups setRepeatCount:INFINITY];
+        animationGroups.removedOnCompletion = false;
+        animationGroups.fillMode = kCAFillModeForwards;
+    }
+    
+    return animationGroups;
+}
+
+- (NSArray *)createAnimationFromStartValue:(float)beginValue
+                              andStartTime:(float)beginTime
+                            withValueScale:(float)aCircle {
+    
+    if (!timmingFunction)
+        timmingFunction = [CAMediaTimingFunction
+                           functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+
+    
+    CABasicAnimation *headAnimation =
+    [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    headAnimation.duration = animationDuration;
+    headAnimation.beginTime = beginTime;
+    headAnimation.fromValue = @(beginValue);
+    headAnimation.toValue =
+    @(beginValue + aCircle * (kMDMaxStrokeLength + kMDMinStrokeLength));
+    headAnimation.timingFunction = timmingFunction;
+    
+    CABasicAnimation *tailAnimation =
+    [CABasicAnimation animationWithKeyPath:@"strokeStart"];
+    tailAnimation.duration = animationDuration;
+    tailAnimation.beginTime = beginTime;
+    tailAnimation.fromValue = @(beginValue - aCircle * kMDMinStrokeLength);
+    tailAnimation.toValue = @(beginValue);
+    tailAnimation.timingFunction = timmingFunction;
+    
+    CABasicAnimation *endHeadAnimation =
+    [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    endHeadAnimation.duration = animationDuration;
+    endHeadAnimation.beginTime = beginTime + animationDuration;
+    endHeadAnimation.fromValue =
+    @(beginValue + aCircle * (kMDMaxStrokeLength + kMDMinStrokeLength));
+    endHeadAnimation.toValue =
+    @(beginValue + aCircle * (kMDMaxStrokeLength + kMDMinStrokeLength));
+    endHeadAnimation.timingFunction = timmingFunction;
+    
+    CABasicAnimation *endTailAnimation =
+    [CABasicAnimation animationWithKeyPath:@"strokeStart"];
+    endTailAnimation.duration = animationDuration;
+    endTailAnimation.beginTime = beginTime + animationDuration;
+    endTailAnimation.fromValue = @(beginValue);
+    endTailAnimation.toValue = @(beginValue + aCircle * kMDMaxStrokeLength);
+    endTailAnimation.timingFunction = timmingFunction;
+    return @[ headAnimation, tailAnimation, endHeadAnimation, endTailAnimation ];
+}
+
+
 
 #pragma mark - Notifications
 

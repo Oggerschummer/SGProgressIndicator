@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -71,6 +73,9 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable CGFloat fourthVelocity;
 
 @property (nonatomic, readonly) BOOL animating;
+
+
+@property(nonatomic) BOOL isAnimating;
 
 
 @property (nonatomic) CGFloat percentValue;

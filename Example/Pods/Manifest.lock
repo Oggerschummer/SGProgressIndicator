@@ -1,5 +1,5 @@
 PODS:
-  - SGProgressIndicator (0.1.0)
+  - SGProgressIndicator (0.1.2)
 
 DEPENDENCIES:
   - SGProgressIndicator (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SGProgressIndicator: 963f6b02d289bfe7c6bf8df346de9838dfb00924
+  SGProgressIndicator: 0fbe8137014ec9048d55dd831dd847ce62daf919
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 31ec6b324534a10815d1e45aaabfa81f4684d57e
+
+COCOAPODS: 1.2.0

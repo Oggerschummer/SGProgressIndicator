@@ -19,12 +19,12 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		60FF21CBA96A86DF4B5083D3 /* Pods_SGProgressIndicator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC41B2E9666559FAAA4E4F /* Pods_SGProgressIndicator_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		99C2F173623F868472FDCE20 /* Pods_SGProgressIndicator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBBF75EB1FE30EC39CA6473 /* Pods_SGProgressIndicator_Example.framework */; };
 		9D02196D1C884FD5005E58F2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D02196A1C884FD5005E58F2 /* TableViewController.m */; };
 		9D02196E1C884FD5005E58F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D02196C1C884FD5005E58F2 /* ViewController.m */; };
 		9DAC3B971C8877B400BE8855 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC3B961C8877B400BE8855 /* Launch Screen.storyboard */; };
-		B6A3920ED6645F7092E1E8CC /* Pods_SGProgressIndicator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7CB194D329B2666084ABD9 /* Pods_SGProgressIndicator_Tests.framework */; };
+		DE7612806F8718026D6D0EE2 /* Pods_SGProgressIndicator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBC3479B1FA9B8ED6170235 /* Pods_SGProgressIndicator_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AFC41B2E9666559FAAA4E4F /* Pods_SGProgressIndicator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGProgressIndicator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4505CD709935060AA031146F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4FBC3479B1FA9B8ED6170235 /* Pods_SGProgressIndicator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGProgressIndicator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* SGProgressIndicator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGProgressIndicator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,20 +58,18 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6B7CB194D329B2666084ABD9 /* Pods_SGProgressIndicator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGProgressIndicator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		758ADFFB487851896CF993F4 /* Pods-SGProgressIndicator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Tests/Pods-SGProgressIndicator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8BBBF75EB1FE30EC39CA6473 /* Pods_SGProgressIndicator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGProgressIndicator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B84A51751FA565D32677E7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9D0219691C884FD5005E58F2 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		9D02196A1C884FD5005E58F2 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		9D02196B1C884FD5005E58F2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9D02196C1C884FD5005E58F2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9DAC3B961C8877B400BE8855 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		9DCACB80EB04FC392B7456D9 /* Pods-SGProgressIndicator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Tests/Pods-SGProgressIndicator_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AB2334BFEA7A8FC49B1BD7FA /* Pods-SGProgressIndicator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Example/Pods-SGProgressIndicator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BEEFBFFA66AD754448102B22 /* Pods-SGProgressIndicator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Example/Pods-SGProgressIndicator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C76DEDE8BC9CE030D34DD73C /* SGProgressIndicator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGProgressIndicator.podspec; path = ../SGProgressIndicator.podspec; sourceTree = "<group>"; };
-		CE65450629B22620DD0C0BED /* Pods-SGProgressIndicator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Tests/Pods-SGProgressIndicator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FBAD11973294A937ED435058 /* Pods-SGProgressIndicator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Example/Pods-SGProgressIndicator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D94998D3ACC4BC7B54FAAB67 /* Pods-SGProgressIndicator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Example/Pods-SGProgressIndicator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EDFB0B8BBCED55596B040104 /* Pods-SGProgressIndicator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGProgressIndicator_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGProgressIndicator_Tests/Pods-SGProgressIndicator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				99C2F173623F868472FDCE20 /* Pods_SGProgressIndicator_Example.framework in Frameworks */,
+				60FF21CBA96A86DF4B5083D3 /* Pods_SGProgressIndicator_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				B6A3920ED6645F7092E1E8CC /* Pods_SGProgressIndicator_Tests.framework in Frameworks */,
+				DE7612806F8718026D6D0EE2 /* Pods_SGProgressIndicator_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				7CA165C052C6ADCCFC13A2CA /* Pods */,
+				9988634D2F81761D8361AABC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,8 +126,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				8BBBF75EB1FE30EC39CA6473 /* Pods_SGProgressIndicator_Example.framework */,
-				6B7CB194D329B2666084ABD9 /* Pods_SGProgressIndicator_Tests.framework */,
+				1AFC41B2E9666559FAAA4E4F /* Pods_SGProgressIndicator_Example.framework */,
+				4FBC3479B1FA9B8ED6170235 /* Pods_SGProgressIndicator_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,10 +135,10 @@
 		6003F593195388D20070C39A /* Example for SGProgressIndicator */ = {
 			isa = PBXGroup;
 			children = (
-				9D0219691C884FD5005E58F2 /* TableViewController.h */,
-				9D02196A1C884FD5005E58F2 /* TableViewController.m */,
 				9D02196B1C884FD5005E58F2 /* ViewController.h */,
 				9D02196C1C884FD5005E58F2 /* ViewController.m */,
+				9D0219691C884FD5005E58F2 /* TableViewController.h */,
+				9D02196A1C884FD5005E58F2 /* TableViewController.m */,
 				6003F59C195388D20070C39A /* SGAppDelegate.h */,
 				6003F59D195388D20070C39A /* SGAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -190,13 +190,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		7CA165C052C6ADCCFC13A2CA /* Pods */ = {
+		9988634D2F81761D8361AABC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FBAD11973294A937ED435058 /* Pods-SGProgressIndicator_Example.debug.xcconfig */,
-				AB2334BFEA7A8FC49B1BD7FA /* Pods-SGProgressIndicator_Example.release.xcconfig */,
-				CE65450629B22620DD0C0BED /* Pods-SGProgressIndicator_Tests.debug.xcconfig */,
-				9DCACB80EB04FC392B7456D9 /* Pods-SGProgressIndicator_Tests.release.xcconfig */,
+				D94998D3ACC4BC7B54FAAB67 /* Pods-SGProgressIndicator_Example.debug.xcconfig */,
+				BEEFBFFA66AD754448102B22 /* Pods-SGProgressIndicator_Example.release.xcconfig */,
+				EDFB0B8BBCED55596B040104 /* Pods-SGProgressIndicator_Tests.debug.xcconfig */,
+				758ADFFB487851896CF993F4 /* Pods-SGProgressIndicator_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -208,12 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SGProgressIndicator_Example" */;
 			buildPhases = (
-				5EBDCF71EC8709AFD56BF0C6 /* Check Pods Manifest.lock */,
+				C5068552B58B1008879055DE /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				03BED10519476E780F852ACC /* Embed Pods Frameworks */,
-				B4629663186594389DB01D9D /* Copy Pods Resources */,
+				FEF8E44C9AD7F59D1EABA807 /* [CP] Embed Pods Frameworks */,
+				8CFFE27AF0A48859F1903D07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,12 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SGProgressIndicator_Tests" */;
 			buildPhases = (
-				933309115E9DDD049D646F44 /* Check Pods Manifest.lock */,
+				888A16B30793848D8AE993EC /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				35C6EC64BDFACA3A009CF9C5 /* Embed Pods Frameworks */,
-				FC333A094EAB6AAA65AE651D /* Copy Pods Resources */,
+				94546F11B7C870873FED38E6 /* [CP] Embed Pods Frameworks */,
+				C2BAAA990C2716E98BF772D2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,9 +252,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SG;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = SALVATORE;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 254B7472CS;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -302,74 +305,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03BED10519476E780F852ACC /* Embed Pods Frameworks */ = {
+		888A16B30793848D8AE993EC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGProgressIndicator_Example/Pods-SGProgressIndicator_Example-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		35C6EC64BDFACA3A009CF9C5 /* Embed Pods Frameworks */ = {
+		8CFFE27AF0A48859F1903D07 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGProgressIndicator_Tests/Pods-SGProgressIndicator_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5EBDCF71EC8709AFD56BF0C6 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		933309115E9DDD049D646F44 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B4629663186594389DB01D9D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,19 +335,64 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGProgressIndicator_Example/Pods-SGProgressIndicator_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC333A094EAB6AAA65AE651D /* Copy Pods Resources */ = {
+		94546F11B7C870873FED38E6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGProgressIndicator_Tests/Pods-SGProgressIndicator_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2BAAA990C2716E98BF772D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGProgressIndicator_Tests/Pods-SGProgressIndicator_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5068552B58B1008879055DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF8E44C9AD7F59D1EABA807 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGProgressIndicator_Example/Pods-SGProgressIndicator_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -452,19 +455,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -492,18 +506,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -519,10 +544,11 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBAD11973294A937ED435058 /* Pods-SGProgressIndicator_Example.debug.xcconfig */;
+			baseConfigurationReference = D94998D3ACC4BC7B54FAAB67 /* Pods-SGProgressIndicator_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 254B7472CS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGProgressIndicator/SGProgressIndicator-Prefix.pch";
 				INFOPLIST_FILE = "SGProgressIndicator/SGProgressIndicator-Info.plist";
@@ -536,10 +562,11 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB2334BFEA7A8FC49B1BD7FA /* Pods-SGProgressIndicator_Example.release.xcconfig */;
+			baseConfigurationReference = BEEFBFFA66AD754448102B22 /* Pods-SGProgressIndicator_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 254B7472CS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGProgressIndicator/SGProgressIndicator-Prefix.pch";
 				INFOPLIST_FILE = "SGProgressIndicator/SGProgressIndicator-Info.plist";
@@ -553,7 +580,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE65450629B22620DD0C0BED /* Pods-SGProgressIndicator_Tests.debug.xcconfig */;
+			baseConfigurationReference = EDFB0B8BBCED55596B040104 /* Pods-SGProgressIndicator_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -577,7 +604,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DCACB80EB04FC392B7456D9 /* Pods-SGProgressIndicator_Tests.release.xcconfig */;
+			baseConfigurationReference = 758ADFFB487851896CF993F4 /* Pods-SGProgressIndicator_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
